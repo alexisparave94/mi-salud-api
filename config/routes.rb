@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   resources :products
 
   get "/search" => "products#search"
+  get "/last" => "products#last"
 end

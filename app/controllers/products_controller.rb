@@ -38,6 +38,11 @@ class ProductsController < ApplicationController
     render json: @products
   end
 
+  def last
+    @product = Product.last
+    render json: @product
+  end
+
   private
 
   def product_params
